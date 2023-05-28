@@ -17,6 +17,7 @@ new movies("Casino Royale","Eon Productions","PG13")
 ] ;
 console.log(movieutils.getpg(moviearray))
 2.Write a “person” class to hold all the details.
+class person {
 constructor(name,age,gender){
 this.name=name;
 this.age=age;
