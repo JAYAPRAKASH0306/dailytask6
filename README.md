@@ -31,6 +31,21 @@ this.gender=gender;
 }
 let per1=new person("jayaprakash",23,"male")
 per1.introduce();
+3.write a class to calculate the uber price.
+    this.baseFare = baseFare;
+    this.costPerMinute = costPerMinute;
+    this.costPerMile = costPerMile;
+  }
+
+  calculatePrice(distance, duration) {
+    const price = this.baseFare + (this.costPerMinute * duration) + (this.costPerMile * distance);
+    return price;
+  }
+}
+
+const calculator = new UberPriceCalculator();
+const totalPrice = calculator.calculatePrice(12, 10);
+console.log(`The total price for the Uber ride is $${totalPrice}`);
 
 
 
